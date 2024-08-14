@@ -42,17 +42,20 @@ section {
 
 .hero--header {
     margin-bottom: 16px;
+    align-self: center;
 }
 
 .hero--text {
     margin-top: 0;
+   align-self: center;
 }
 
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 40px;
     overflow-x: auto;
+    justify-content: center;
 }
 
 .card {
@@ -61,9 +64,12 @@ section {
     flex: 0 0 auto;         /* ADD */
     display: flex;          /* ADD */
     flex-direction: column; /* ADD */
-    position: relative;
+    position: relative;    
 }
-
+.card:hover{
+    transform: scale(1.01)translateY(-2px);
+    cursor: pointer;
+}
 .card--image {
     width: 100%;
     border-radius: 9px;
